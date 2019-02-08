@@ -4,20 +4,21 @@
 justify-content: center;
 align-content: center;
 align-items: center;}
-.slider-thumbs{display:flex;color:yellow;position: absolute;z-index: 2;}
+.slider-thumbs{display:flex;color:yellow;position: relative;z-index: 3;width:100vw;height:90vh;justify-content: center;align-content: flex-end;align-self: flex-end;}
         /* li{color:white;} */
-        body{
-            background-image: url("../images/Background.jpg");
-        }
+        
+        section {
+            display: block;}
         .sliders{ background-image: url("../images/trees.jpg") ;
             background-repeat: no-repeat;
-            background-size: 100vw 100vh;}
+            background-size: 100vw 100vh;
+        padding-bottom: 100px;}
         .slider,.slider,.slider3{
             
             /*background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);*/
-           
+            padding-bottom: 100px;
             display: flex;
-                 justify-content: center;
+                 justify-content:center;
                  text-align: center;
             /*opacity: 0.85;*/
            opacity: 1;
@@ -28,7 +29,7 @@ align-items: center;}
                  align-items: center;
                  align-content: center;
                  
-                 padding:5%;
+                 /* padding:5%; */
                 }
         .sliders{width: 100vw;height: 100vh;}
         .slider,.slider3{
@@ -36,6 +37,7 @@ align-items: center;}
             top:0;
             opacity: 0;
       transition: all 1s linear;
+      padding-bottom: 100px;
         }
         .Story,.Story2{font-family: "Playfair Display";
         font-size: 24px;
@@ -58,7 +60,7 @@ transition: all 1s linear;
                  display: flex;
                  justify-content: center;
                     }
-        .Text_Logo{
+        .Text_Logo,.Text_Logo1{
             width: 510px;
             /* height: 31px; */
             color: #ffffff;
@@ -74,7 +76,7 @@ transition: all 1s linear;
             }   
             .line{width: 50px;height:2px;background-color: #3fc; margin-top: 1vw;}
             .box-header{display: flex;justify-content: center;text-align:center;align-content: center;flex-direction: column;}
-            .Text_Content{
+            .Text_Content,.Text_Content1{
                 width:50%;
                 height:10%;
                 padding-top: 1vw;
@@ -107,6 +109,8 @@ transition: all 1s linear;
                 margin-top:5vh;
                 
             }
+            .Text_Logo1{color:black;width:100vw;font-size: 18px; font-weight: bold;}
+            .Text_Content1{color:black;}
            .nav{
                display: flex;
                justify-content: space-between;
@@ -129,24 +133,30 @@ html{
 }
 .video{background-image: url("../images/City.jpg"); width: 100vw;height: 100vh;background-repeat: no-repeat; display: flex;background-size: 100vw 100vh;}
 /*.d1{background-image: url("../images/play.jpg");background-color: black;color:black}*/
-@media only screen and (min-width: 766px){
+@media only screen  and (min-width:992px) and (max-width: 100vw){
 .nv{display: flex;;justify-content: flex-end;}
 }
-@media only screen and (max-width: 765px){
+video {
+    max-width: 100%;
+    height: auto;
+  }
+  .block{position:relative;display:flex;justify-content: center;text-align: center;align-content: center;align-items: center;border:0px solid grey;opacity:1;align-self: center; }
+/* @media only screen and (min-width: 765px){
     .nv{display: flex;;justify-content: flex-start;}
     .Text_Logo{
         width: 510px;
-        /* height: 31px; */
+        height: 31px;
         color: #ffffff;
         font-family: "Playfair Display - Black";
         font-size: 38px;
-        /* font-weight: 400; */
+        font-weight: 400;
         width: 100vw;
         letter-spacing: 0.32px;
-        /*padding-top:50vh;*/
+        padding-top:50vh;
         margin: 0;
         padding: 0;
         padding-top: 1vw;
         }   
 
-    }
+   
+.navbar{width:100vw;}  
