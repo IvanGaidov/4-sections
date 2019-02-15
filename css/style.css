@@ -3,17 +3,23 @@
 .section3{display: flex;
 justify-content: center;
 align-content: center;
-align-items: center;}
+align-items: center;
+}
 .slider-thumbs{display:flex;color:yellow;position: relative;z-index: 3;width:100vw;height:90vh;justify-content: center;align-content: flex-end;align-self: flex-end;}
         /* li{color:white;} */
         
         section {
+          /* align-self: ; */
             display: block;}
         .sliders{ background-image: url("../images/trees.jpg") ;
             background-repeat: no-repeat;
             background-size: 100vw 100vh;
         padding-bottom: 100px;
         width: 100vw;height: 100vh;}
+        .section5{display: flex; background-image: url("../images/trees.jpg") ;
+          background-repeat: no-repeat;
+          background-size: 100vw 100vh;
+        height:100vh;}
         .slider,.slider,.slider3{
             
             /*background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);*/
@@ -61,6 +67,11 @@ transition: all 1s linear;
                  display: flex;
                  justify-content: center;
                     }
+                    .linear2{
+                      display: flex;width: 100vw;
+                      height: 100vh;
+                       background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+                           opacity: 0.85;}
         .Text_Logo,.Text_Logo1{
             width: 510px;
             /* height: 31px; */
@@ -116,10 +127,11 @@ transition: all 1s linear;
                 justify-content: center;
                 text-align: center;
                 align-content: center;
-                flex-direction: column;
+                /* flex-direction: column; */
                 width: 100px;
                 margin-top:5vh;
-                
+                /* position:relative; */
+                /* left:50%; */
             }
             .Text_Logo1,.Text_Logo2{color:black;width:100%;font-size: 18px; font-weight: bold;}
             .Text_Content1,.Text_Content2{color:black;}
@@ -140,7 +152,7 @@ transition: all 1s linear;
         opacity: 0.8;
         background-color: #311d5e;
     }
-    .navbar1{justify-content: space-around;}
+    .navbar1{justify-content: space-around; width: 100%;}
 html{
   scroll-behavior: smooth;
   width: 100%;
@@ -149,12 +161,34 @@ html{
 /*.d1{background-image: url("../images/play.jpg");background-color: black;color:black}*/
 @media only screen  and (min-width:992px) and (max-width: 100vw){
 .nv{display: flex;;justify-content: flex-end;}
+
 }
 video {
     max-width: 100vw;
     height: auto;
+    /* transition: all 1s linear; */
   }
-  .block.block1{display:flex;justify-content: center;text-align: center;align-content: center;align-items: center;border:0px solid grey;opacity:1;align-self: center;width: 100%; }
+  @media only screen  and (min-width:1px) and (max-width: 767px){
+    #Learnbtn2{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      flex-direction: column;
+      width: 100px;
+      margin-top:5vh;
+      align-self: center;
+      align-items: center;;
+
+  }
+  .TextSec2{text-align: center;align-items: center;}
+.im{display:flex;align-content: center;align-items: center;;align-self: center; justify-content: center; display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;}
+  .block1{color:white;text-align: start;justify-content: flex-start;margin-top:5%;margin-bottom: 5%;}
+  }
+  .block.block1{display:flex;justify-content: center;text-align: center;align-content: center;align-items: center;border:0px solid grey;opacity:1;align-self: center;width: 100%;margin-bottom: 100px; }
 /* @media only screen and (min-width: 765px){
     .nv{display: flex;;justify-content: flex-start;}
     .Text_Logo{
@@ -181,3 +215,6 @@ body{width:100%;}
 .Text_Content2{color:white;}
 .linear1{height: 100%;opacity:0.9;}
 .footer{background-image: url("../images/Keyboard.jpg");background-size: 100vw 100%;background-repeat: no-repeat;}
+.block2{display:inline;}
+.bbbb{background-image: url("../images/ph10.jpg");background-repeat: no-repeat; background-size:100%;height:300px;;}
+.i0.i0.i0.i0,.i1.i1.i1.i1,.i2.i2.i2.i2,.i3.i3.i3.i3{color:white;}
